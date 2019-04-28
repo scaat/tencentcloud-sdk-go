@@ -38,7 +38,8 @@ func (c *Client) SendRequest(mod string, params map[string]string) (response str
 	region := c.region
 
 	method := "POST"
-	host := mod + ".api.qcloud.com"
+	// host := mod + ".api.qcloud.com"
+	host := mod + ".api2.tce.cloud.yonghui.cn"
 	path := "/v2/index.php"
 
 	paramValues := url.Values{}
