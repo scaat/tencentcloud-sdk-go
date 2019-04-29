@@ -15,7 +15,8 @@ const (
 	POST = "POST"
 	GET  = "GET"
 
-	RootDomain = "api.qcloud.com"
+	// RootDomain = "api.qcloud.com"
+	RootDomain = "api2.tce.cloud.yonghui.cn"
 	V2Path     = "/v2/index.php"
 )
 
