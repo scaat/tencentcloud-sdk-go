@@ -93,9 +93,11 @@ func (r *BaseRequest) GetService() string {
 
 func (r *BaseRequest) GetUrl() string {
 	if r.httpMethod == GET {
-		return "https://" + r.domain + r.path + "?" + getUrlQueriesEncoded(r.params)
+		return "http://" + r.domain + r.path + "?" + getUrlQueriesEncoded(r.params)
+		// return "https://" + r.domain + r.path + "?" + getUrlQueriesEncoded(r.params)
 	} else if r.httpMethod == POST {
-		return "https://" + r.domain + r.path
+		// return "https://" + r.domain + r.path
+		return "http://" + r.domain + r.path
 	} else {
 		return ""
 	}
